@@ -1,0 +1,7 @@
+<div class="info">
+  <p>Other informations</p>
+</div>
+<div *ngIf="logsSub | async as logs" class="logs">
+  <p>Log</p>
+  <span *ngFor="let log of logs">{{ log }}</span>
+</div>
